@@ -1,0 +1,16 @@
+:root {
+  --primary: #2563eb;   
+  --accent: #facc15;    
+  --background: #f9fafb; 
+  --text-dark: #111827; 
+  --text-muted: #6b7280; 
+  --border-color: #e5e7eb; 
+  --radius: 8px;
+  --transition: all 0.3s ease;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-dark);
+  font-family: "Inter", sans-serif;
+}

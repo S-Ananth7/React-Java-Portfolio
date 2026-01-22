@@ -1,0 +1,110 @@
+:root {
+  --primary: #facc15; 
+  --danger: #ef4444; 
+  --text-dark: #111827;
+  --text-gray: #6b7280;
+  --bg-light: #f9fafb;
+}
+
+
+.profile-container {
+  background: var(--bg-light);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  padding: 20px;
+}
+
+
+.profile-card {
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 420px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.profile-name {
+  color: var(--text-dark);
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.profile-email {
+  color: var(--text-gray);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+
+.profile-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+
+.profile-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+
+.edit-btn {
+  background: var(--primary);
+  color: var(--text-dark);
+}
+
+.edit-btn:hover {
+  background: #eab308;
+  transform: scale(1.05);
+}
+
+
+.logout-btn {
+  background: var(--danger);
+  color: #fff;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 500px) {
+  .profile-card {
+    padding: 30px 20px;
+  }
+
+  .profile-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,91 @@
+.about-container {
+  min-height: 100vh;
+  background-image: url("/Images/Background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.about-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 600px;
+}
+
+.about-card h2 {
+  font-size: 2rem;
+  color: #facc15;
+  margin-bottom: 20px;
+}
+
+.about-card p {
+  color: #d1d5db;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.about-card strong {
+  color: #fff;
+}
+
+.button-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.button-container button {
+  background: #facc15;
+  color: #111827;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(250, 204, 21, 0.3);
+}
+
+.button-container button:hover {
+  background: #eab308;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(250, 204, 21, 0.5);
+}
+
+
+@media (max-width: 600px) {
+  .about-card {
+    padding: 30px 20px;
+  }
+
+  .about-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-card p {
+    font-size: 14px;
+  }
+}

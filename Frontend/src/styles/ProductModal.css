@@ -1,0 +1,84 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: zoomIn 0.25s ease;
+}
+
+.modal-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.modal-price {
+  color: #2563eb;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.modal-desc {
+  color: #444;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-btn,
+.close-btn {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-btn {
+  background: #2563eb;
+  color: white;
+}
+.add-btn:hover {
+  background: #1e4ed8;
+}
+
+.close-btn {
+  background: #f3f4f6;
+  color: #111;
+}
+.close-btn:hover {
+  background: #e5e7eb;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
