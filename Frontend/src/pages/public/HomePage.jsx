@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
-import shoppingAnimation from "../../Animations/shopping.json";
+import shoppingAnimation from "../../Animations/Shopping.json";
 import "./styles/HomePage.css";
 
 export default function HomePage() {
